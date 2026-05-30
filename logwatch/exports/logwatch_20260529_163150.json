@@ -1,0 +1,244 @@
+{
+  "exported_at": "2026-05-29T16:31:50.983460",
+  "count": 34,
+  "entries": [
+    {
+      "timestamp": "2024-01-15T08:00:01",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Application started successfully",
+      "raw": "2024-01-15 08:00:01 INFO  Application started successfully"
+    },
+    {
+      "timestamp": "2024-01-15T08:00:05",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Loading configuration from config.yaml",
+      "raw": "2024-01-15 08:00:05 INFO  Loading configuration from config.yaml"
+    },
+    {
+      "timestamp": "2024-01-15T08:00:06",
+      "level": "WARNING",
+      "source": "sample.log",
+      "message": "Config key 'timeout' missing, using default value 30s",
+      "raw": "2024-01-15 08:00:06 WARNING Config key 'timeout' missing, using default value 30s"
+    },
+    {
+      "timestamp": "2024-01-15T08:00:10",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Database connection established on port 5432",
+      "raw": "2024-01-15 08:00:10 INFO  Database connection established on port 5432"
+    },
+    {
+      "timestamp": "2024-01-15T08:01:02",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "User 'admin' logged in from 192.168.1.10",
+      "raw": "2024-01-15 08:01:02 INFO  User 'admin' logged in from 192.168.1.10"
+    },
+    {
+      "timestamp": "2024-01-15T08:01:45",
+      "level": "WARNING",
+      "source": "sample.log",
+      "message": "Disk usage at 78% on /dev/sda1",
+      "raw": "2024-01-15 08:01:45 WARNING Disk usage at 78% on /dev/sda1"
+    },
+    {
+      "timestamp": "2024-01-15T08:02:11",
+      "level": "ERROR",
+      "source": "sample.log",
+      "message": "Failed to connect to external API: Connection timeout",
+      "raw": "2024-01-15 08:02:11 ERROR  Failed to connect to external API: Connection timeout"
+    },
+    {
+      "timestamp": "2024-01-15T08:02:15",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Retrying connection... attempt 1/3",
+      "raw": "2024-01-15 08:02:15 INFO  Retrying connection... attempt 1/3"
+    },
+    {
+      "timestamp": "2024-01-15T08:02:20",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Retrying connection... attempt 2/3",
+      "raw": "2024-01-15 08:02:20 INFO  Retrying connection... attempt 2/3"
+    },
+    {
+      "timestamp": "2024-01-15T08:02:25",
+      "level": "ERROR",
+      "source": "sample.log",
+      "message": "Retrying connection... attempt 3/3 — GIVING UP",
+      "raw": "2024-01-15 08:02:25 ERROR  Retrying connection... attempt 3/3 — GIVING UP"
+    },
+    {
+      "timestamp": "2024-01-15T08:03:00",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Cache cleared successfully",
+      "raw": "2024-01-15 08:03:00 INFO  Cache cleared successfully"
+    },
+    {
+      "timestamp": "2024-01-15T08:03:30",
+      "level": "WARNING",
+      "source": "sample.log",
+      "message": "Memory usage at 85% — consider restarting workers",
+      "raw": "2024-01-15 08:03:30 WARNING Memory usage at 85% — consider restarting workers"
+    },
+    {
+      "timestamp": "2024-01-15T08:04:01",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Scheduled job 'backup' started",
+      "raw": "2024-01-15 08:04:01 INFO  Scheduled job 'backup' started"
+    },
+    {
+      "timestamp": "2024-01-15T08:04:59",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Scheduled job 'backup' completed in 58s",
+      "raw": "2024-01-15 08:04:59 INFO  Scheduled job 'backup' completed in 58s"
+    },
+    {
+      "timestamp": "2024-01-15T08:05:10",
+      "level": "ERROR",
+      "source": "sample.log",
+      "message": "Unhandled exception in thread-worker-3: NullPointerException",
+      "raw": "2024-01-15 08:05:10 ERROR  Unhandled exception in thread-worker-3: NullPointerException"
+    },
+    {
+      "timestamp": "2024-01-15T08:05:11",
+      "level": "ERROR",
+      "source": "sample.log",
+      "message": "Stack trace saved to /var/log/crash_20240115.log",
+      "raw": "2024-01-15 08:05:11 ERROR  Stack trace saved to /var/log/crash_20240115.log"
+    },
+    {
+      "timestamp": "2024-01-15T08:06:00",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Health check passed — all services nominal",
+      "raw": "2024-01-15 08:06:00 INFO  Health check passed — all services nominal"
+    },
+    {
+      "timestamp": "2024-01-15T08:07:22",
+      "level": "WARNING",
+      "source": "sample.log",
+      "message": "SSL certificate expires in 14 days for domain api.example.com",
+      "raw": "2024-01-15 08:07:22 WARNING SSL certificate expires in 14 days for domain api.example.com"
+    },
+    {
+      "timestamp": "2024-01-15T08:08:00",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "New deployment triggered by user 'devops'",
+      "raw": "2024-01-15 08:08:00 INFO  New deployment triggered by user 'devops'"
+    },
+    {
+      "timestamp": "2024-01-15T08:08:45",
+      "level": "INFO",
+      "source": "sample.log",
+      "message": "Deployment completed — version 2.4.1 is live",
+      "raw": "2024-01-15 08:08:45 INFO  Deployment completed — version 2.4.1 is live"
+    },
+    {
+      "timestamp": "2024-01-15T07:55:00",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "Nginx worker process started (PID 1042)",
+      "raw": "2024-01-15 07:55:00 INFO  Nginx worker process started (PID 1042)"
+    },
+    {
+      "timestamp": "2024-01-15T07:55:01",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "Listening on 0.0.0.0:80 and 0.0.0.0:443",
+      "raw": "2024-01-15 07:55:01 INFO  Listening on 0.0.0.0:80 and 0.0.0.0:443"
+    },
+    {
+      "timestamp": "2024-01-15T08:00:00",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "GET /api/status 200 12ms",
+      "raw": "2024-01-15 08:00:00 INFO  GET /api/status 200 12ms"
+    },
+    {
+      "timestamp": "2024-01-15T08:00:12",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "GET /api/users 200 45ms",
+      "raw": "2024-01-15 08:00:12 INFO  GET /api/users 200 45ms"
+    },
+    {
+      "timestamp": "2024-01-15T08:01:00",
+      "level": "WARNING",
+      "source": "server.log",
+      "message": "Rate limit exceeded for IP 203.0.113.42",
+      "raw": "2024-01-15 08:01:00 WARNING Rate limit exceeded for IP 203.0.113.42"
+    },
+    {
+      "timestamp": "2024-01-15T08:01:01",
+      "level": "WARNING",
+      "source": "server.log",
+      "message": "Blocking IP 203.0.113.42 for 60 seconds",
+      "raw": "2024-01-15 08:01:01 WARNING Blocking IP 203.0.113.42 for 60 seconds"
+    },
+    {
+      "timestamp": "2024-01-15T08:02:00",
+      "level": "ERROR",
+      "source": "server.log",
+      "message": "POST /api/upload 500 — Internal Server Error",
+      "raw": "2024-01-15 08:02:00 ERROR  POST /api/upload 500 — Internal Server Error"
+    },
+    {
+      "timestamp": "2024-01-15T08:02:01",
+      "level": "ERROR",
+      "source": "server.log",
+      "message": "Storage backend unreachable: S3 bucket timeout",
+      "raw": "2024-01-15 08:02:01 ERROR  Storage backend unreachable: S3 bucket timeout"
+    },
+    {
+      "timestamp": "2024-01-15T08:03:10",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "GET /api/health 200 3ms",
+      "raw": "2024-01-15 08:03:10 INFO  GET /api/health 200 3ms"
+    },
+    {
+      "timestamp": "2024-01-15T08:04:00",
+      "level": "WARNING",
+      "source": "server.log",
+      "message": "Slow query detected: 3400ms on /api/reports",
+      "raw": "2024-01-15 08:04:00 WARNING Slow query detected: 3400ms on /api/reports"
+    },
+    {
+      "timestamp": "2024-01-15T08:05:00",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "DELETE /api/session 200 8ms",
+      "raw": "2024-01-15 08:05:00 INFO  DELETE /api/session 200 8ms"
+    },
+    {
+      "timestamp": "2024-01-15T08:06:30",
+      "level": "ERROR",
+      "source": "server.log",
+      "message": "SSL handshake failed for client 198.51.100.7",
+      "raw": "2024-01-15 08:06:30 ERROR  SSL handshake failed for client 198.51.100.7"
+    },
+    {
+      "timestamp": "2024-01-15T08:07:00",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "GET /api/status 200 11ms",
+      "raw": "2024-01-15 08:07:00 INFO  GET /api/status 200 11ms"
+    },
+    {
+      "timestamp": "2024-01-15T08:08:00",
+      "level": "INFO",
+      "source": "server.log",
+      "message": "Config reloaded without downtime",
+      "raw": "2024-01-15 08:08:00 INFO  Config reloaded without downtime"
+    }
+  ]
+}

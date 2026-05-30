@@ -1,0 +1,20 @@
+2024-01-15 08:00:01 INFO  Application started successfully
+2024-01-15 08:00:05 INFO  Loading configuration from config.yaml
+2024-01-15 08:00:06 WARNING Config key 'timeout' missing, using default value 30s
+2024-01-15 08:00:10 INFO  Database connection established on port 5432
+2024-01-15 08:01:02 INFO  User 'admin' logged in from 192.168.1.10
+2024-01-15 08:01:45 WARNING Disk usage at 78% on /dev/sda1
+2024-01-15 08:02:11 ERROR  Failed to connect to external API: Connection timeout
+2024-01-15 08:02:15 INFO  Retrying connection... attempt 1/3
+2024-01-15 08:02:20 INFO  Retrying connection... attempt 2/3
+2024-01-15 08:02:25 ERROR  Retrying connection... attempt 3/3 — GIVING UP
+2024-01-15 08:03:00 INFO  Cache cleared successfully
+2024-01-15 08:03:30 WARNING Memory usage at 85% — consider restarting workers
+2024-01-15 08:04:01 INFO  Scheduled job 'backup' started
+2024-01-15 08:04:59 INFO  Scheduled job 'backup' completed in 58s
+2024-01-15 08:05:10 ERROR  Unhandled exception in thread-worker-3: NullPointerException
+2024-01-15 08:05:11 ERROR  Stack trace saved to /var/log/crash_20240115.log
+2024-01-15 08:06:00 INFO  Health check passed — all services nominal
+2024-01-15 08:07:22 WARNING SSL certificate expires in 14 days for domain api.example.com
+2024-01-15 08:08:00 INFO  New deployment triggered by user 'devops'
+2024-01-15 08:08:45 INFO  Deployment completed — version 2.4.1 is live
