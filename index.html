@@ -50,6 +50,19 @@
     <button class="nav-tab" data-tab="logs">▸ LOG MONITOR</button>
   </nav>
 
+  <!-- AI SELECTOR -->
+  <div id="ai-selector">
+    <span class="ai-label">MODEL:</span>
+    <div class="ai-pills" id="ai-pills">
+      <button class="ai-pill active" data-model="openrouter/auto">⭐ Auto</button>
+      <button class="ai-pill" data-model="deepseek/deepseek-chat-v3-0324:free">DeepSeek</button>
+      <button class="ai-pill" data-model="google/gemini-2.0-flash-exp:free">Gemini</button>
+      <button class="ai-pill" data-model="openai/gpt-oss-20b:free">GPT</button>
+      <button class="ai-pill" data-model="meta-llama/llama-3.3-70b-instruct:free">Llama</button>
+      <button class="ai-pill" data-model="qwen/qwen3-235b-a22b:free">Qwen3</button>
+    </div>
+  </div>
+
   <!-- ══ CHAT PANEL ══ -->
   <div class="tab-panel active" id="tab-chat">
     <main id="terminal-wrap">
