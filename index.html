@@ -55,12 +55,10 @@
     <main id="terminal-wrap">
       <div id="terminal"></div>
     </main>
-
     <div id="thinking" class="hidden">
       <div class="think-dots"><span></span><span></span><span></span></div>
       <span>Shadow memproses...</span>
     </div>
-
     <footer id="input-area">
       <div class="input-row">
         <span class="prompt-sym">▸</span>
@@ -69,7 +67,7 @@
       </div>
       <div class="input-meta">
         <span id="model-label">—</span>
-        <span>ENTER kirim &nbsp;·&nbsp; /help perintah</span>
+        <span>ENTER kirim &nbsp;·&nbsp; /help</span>
       </div>
     </footer>
   </div>
@@ -78,46 +76,56 @@
   <div class="tab-panel" id="tab-logs">
     <div id="log-panel">
 
-      <!-- File loader bar -->
+      <!-- File loader -->
       <div class="log-upload-bar">
         <label for="log-file-input" class="log-upload-btn">[ + LOAD FILE ]</label>
         <input type="file" id="log-file-input" accept=".log,.txt" multiple>
         <span class="log-sep">|</span>
         <span class="live-dot"></span>
-        <span style="font-size:10px;letter-spacing:1px;color:var(--green-dim)">LIVE</span>
+        <span style="font-size:10px;color:var(--green-dim);letter-spacing:1px">LIVE</span>
         <span class="log-sep">|</span>
         <div class="loaded-files" id="loaded-files">
-          <span class="no-files-hint">belum ada file — load .log atau .txt</span>
+          <span class="no-files-hint">belum ada file</span>
         </div>
       </div>
 
-      <!-- Filter toolbar -->
+      <!-- Filter toolbar — grid 2 kolom -->
       <div class="log-toolbar">
+
+        <!-- Baris 1: Search -->
         <div class="log-search-wrap">
-          <input type="text" id="log-kw" placeholder="SEARCH..." class="log-input-kw">
-          <button id="log-kw-clear" class="kw-clear-btn" title="hapus">✕</button>
+          <input type="text" id="log-kw" placeholder="SEARCH KEYWORD..." class="log-input-kw">
+          <button id="log-kw-clear" class="kw-clear-btn">✕</button>
         </div>
-        <span class="log-sep">|</span>
-        <button class="lvl-btn err active-err"  data-lvl="ERROR">ERR</button>
-        <button class="lvl-btn warn active-warn" data-lvl="WARNING">WARN</button>
-        <button class="lvl-btn info active-info" data-lvl="INFO">INFO</button>
-        <span class="log-sep">|</span>
+
+        <!-- Baris 2: Level toggle -->
+        <div class="log-lvl-row">
+          <button class="lvl-btn err active-err"  data-lvl="ERROR">ERR</button>
+          <button class="lvl-btn warn active-warn" data-lvl="WARNING">WARN</button>
+          <button class="lvl-btn info active-info" data-lvl="INFO">INFO</button>
+        </div>
+
+        <!-- Baris 3: Time range -->
         <input type="text" id="log-since" placeholder="DARI HH:MM" class="log-input-time">
         <input type="text" id="log-until" placeholder="SAMPAI HH:MM" class="log-input-time">
-        <span class="log-sep">|</span>
-        <button class="tb-action-btn" id="btn-export-txt">TXT</button>
-        <button class="tb-action-btn" id="btn-export-json">JSON</button>
-        <button class="tb-action-btn danger" id="btn-log-reset">RESET</button>
+
+        <!-- Baris 4: Actions -->
+        <div class="log-action-row">
+          <button class="tb-action-btn" id="btn-export-txt">[ TXT ]</button>
+          <button class="tb-action-btn" id="btn-export-json">[ JSON ]</button>
+          <button class="tb-action-btn danger" id="btn-log-reset">[ RESET ]</button>
+        </div>
+
       </div>
 
-      <!-- Stats bar -->
+      <!-- Stats -->
       <div class="log-stats-bar">
         <div class="stat-pill">
           <span class="sp-label">TOTAL</span>
           <span class="sp-val total" id="st-total">0</span>
         </div>
         <div class="stat-pill">
-          <span class="sp-label">ERROR</span>
+          <span class="sp-label">ERR</span>
           <span class="sp-val err" id="st-err">0</span>
         </div>
         <div class="stat-pill">
@@ -139,7 +147,7 @@
     </div>
   </div>
 
-</div><!-- /#app -->
+</div>
 
 <!-- Modal Config -->
 <div id="modal-overlay" class="hidden"></div>
@@ -148,7 +156,6 @@
     <span class="modal-title">[ KONFIGURASI ]</span>
     <button class="modal-close" id="modal-close">✕</button>
   </div>
-
   <div class="field-group">
     <label>PROVIDER</label>
     <div class="provider-tabs" id="provider-tabs">
@@ -158,7 +165,6 @@
       <button class="ptab" data-p="openai">OpenAI</button>
     </div>
   </div>
-
   <div class="field-group">
     <label>API KEY</label>
     <div class="key-row">
@@ -167,19 +173,16 @@
     </div>
     <div class="field-hint" id="key-hint">openrouter.ai → Keys → Create Key</div>
   </div>
-
   <div class="field-group">
     <label>MODEL</label>
     <select id="cfg-model"></select>
   </div>
-
   <div class="modal-actions">
     <button class="btn-secondary" id="btn-cancel">BATAL</button>
     <button class="btn-primary" id="btn-save">SIMPAN</button>
   </div>
 </div>
 
-<!-- Toast -->
 <div id="log-toast"></div>
 
 <script src="script.js"></script>
