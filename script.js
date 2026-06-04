@@ -626,3 +626,23 @@ loadConfigFromServer().then(serverCfg => {
   }
 });
 updateStatus();
+
+// ── AI Quick Selector ────────────────────
+document.querySelectorAll('.ai-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    // Update active pill
+    document.querySelectorAll('.ai-pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+
+    // Update model
+    const model = pill.dataset.model;
+    cfg.provider = 'openrouter';
+    cfg.model = model;
+    saveConfig(cfg);
+    updateStatus();
+
+    // Feedback
+    addLine('system', `  ✓ Model: ${pill.textContent.trim()}`);
+    addDivider();
+  });
+});
