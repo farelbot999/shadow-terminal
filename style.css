@@ -435,3 +435,11 @@ html, body {
 .btn-secondary:hover { border-color: var(--green-dim); color: var(--green); }
 
 .hidden { display: none !important; }
+
+/* ── FIX TAB SWITCHING ── */
+.tab-panel { display: none !important; flex-direction: column; flex: 1; overflow: hidden; min-height: 0; }
+.tab-panel.active { display: flex !important; }
+#tab-chat { display: none !important; }
+#tab-chat.active { display: flex !important; flex-direction: column; flex: 1; overflow: hidden; }
+#tab-logs { display: none !important; }
+#tab-logs.active { display: flex !important; flex-direction: column; flex: 1; overflow: hidden; }
