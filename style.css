@@ -443,3 +443,23 @@ html, body {
 #tab-chat.active { display: flex !important; flex-direction: column; flex: 1; overflow: hidden; }
 #tab-logs { display: none !important; }
 #tab-logs.active { display: flex !important; flex-direction: column; flex: 1; overflow: hidden; }
+
+/* ── AI QUICK SELECTOR ── */
+#ai-selector {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 12px;
+  background: #050505;
+  border-bottom: 1px solid #0a2a0a;
+  flex-shrink: 0; overflow-x: auto;
+}
+#ai-selector::-webkit-scrollbar { display: none; }
+.ai-label { color: #005010; font-size: 9px; letter-spacing: 2px; white-space: nowrap; font-family: monospace; }
+.ai-pills { display: flex; gap: 5px; }
+.ai-pill {
+  background: transparent; border: 1px solid #0a3a0a;
+  color: #1a5c1a; font-family: monospace; font-size: 10px;
+  padding: 3px 10px; cursor: pointer; letter-spacing: 1px;
+  white-space: nowrap; transition: all 0.15s; border-radius: 2px;
+}
+.ai-pill:hover { border-color: #00aa2a; color: #00aa2a; }
+.ai-pill.active { border-color: #00ff41; color: #00ff41; background: rgba(0,255,65,0.08); text-shadow: 0 0 6px rgba(0,255,65,0.5); }
